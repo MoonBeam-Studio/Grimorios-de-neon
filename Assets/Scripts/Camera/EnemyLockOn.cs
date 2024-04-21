@@ -44,15 +44,7 @@ public class EnemyLockOn : MonoBehaviour
         defMovement.lockMovement = enemyLocked;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Trying to lock camera");
-            if (currentTarget)
-            {
-                //If there is already a target, Reset.
-                ResetTarget();
-                return;
-            }
             
-            if (currentTarget = ScanNearBy()) FoundTarget(); else ResetTarget();
         }
 
         if (enemyLocked) {
@@ -146,5 +138,18 @@ public class EnemyLockOn : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, noticeZone);   
+    }
+
+    private void OnCameraLock()
+    {
+        Debug.Log("Trying to lock camera");
+        if (currentTarget)
+        {
+            //If there is already a target, Reset.
+            ResetTarget();
+            return;
+        }
+
+        if (currentTarget = ScanNearBy()) FoundTarget(); else ResetTarget();
     }
 }
