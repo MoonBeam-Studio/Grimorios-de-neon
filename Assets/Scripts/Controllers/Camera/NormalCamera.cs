@@ -7,6 +7,7 @@ using UnityEngine;
 public class NormalCamera : MonoBehaviour
 {
     [SerializeField] private bool IsCameraActive = true;
+    [SerializeField] GameObject Pointer;
     private CinemachineVirtualCamera _camera;
 
     private void Awake()
@@ -30,11 +31,13 @@ public class NormalCamera : MonoBehaviour
         {
             IsCameraActive = false;
             _camera.Priority = 0;
+            Pointer.SetActive(!IsCameraActive);
         }
         else
         {
             IsCameraActive = true;
             _camera.Priority = 2;
+            Pointer.SetActive(!IsCameraActive);
         }
     }
 }
