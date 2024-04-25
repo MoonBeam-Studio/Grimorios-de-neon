@@ -43,10 +43,26 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+        private void OnCameraSwitch()
+        {
+            EventManager.Instance.SwitchCameraEvent();
+        }
+
+        private void OnCastSpell()
+        {
+			Debug.Log("CastSpell - Input");
+            EventManager.Instance.SpellCastEvent();
+        }
+
+		private void OnReleaseSpell()
+		{
+            EventManager.Instance.SpellReleaseEvent();
+        }
 #endif
 
 
-		public void MoveInput(Vector2 newMoveDirection)
+        public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
 		} 
@@ -70,6 +86,8 @@ namespace StarterAssets
 		{
 			SetCursorState(cursorLocked);
 		}
+
+		
 
 		private void SetCursorState(bool newState)
 		{
