@@ -57,6 +57,7 @@ namespace StarterAssets
 
 		private void OnReleaseSpell()
 		{
+            Debug.Log("ReleaseSpell - Input");
             EventManager.Instance.SpellReleaseEvent();
         }
 #endif

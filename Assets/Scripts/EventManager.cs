@@ -31,6 +31,6 @@ public class EventManager : MonoBehaviour
 
     //--| Attack
     //---| Spells
-    public void SpellCastEvent() { OnSpellCast?.Invoke(); Debug.Log("CastSpell - EM"); }
-    public void SpellReleaseEvent() => OnSpellRelease?.Invoke();
+    public void SpellCastEvent() => OnSpellCast?.Invoke();
+    public void SpellReleaseEvent() { OnSpellRelease?.Invoke(); Debug.Log("ReleaseSpell - Event"); }
 }
