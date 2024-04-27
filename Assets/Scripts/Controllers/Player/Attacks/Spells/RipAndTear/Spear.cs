@@ -11,6 +11,7 @@ public class Spear : MonoBehaviour
 
     private void Start()
     {
+        lineRenderer = GetComponentInChildren<LineRenderer>();
         SpearBottom = GameObject.Find($"{gameObject.name}/SpearBottom").transform;
         Hand = GameObject.Find("Player/Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/SpellOutPosition").transform;
 
@@ -20,11 +21,6 @@ public class Spear : MonoBehaviour
     private void Update()
     {
         ChainPositions();
-    }
-
-    private void OnDestroy()
-    {
-        lineRenderer.enabled = false;
     }
 
     private void ChainPositions()

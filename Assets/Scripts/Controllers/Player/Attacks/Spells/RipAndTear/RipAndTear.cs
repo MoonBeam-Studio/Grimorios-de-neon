@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Transactions;
 using UnityEngine;
 
 public class RipAndTear : MonoBehaviour
@@ -10,7 +11,7 @@ public class RipAndTear : MonoBehaviour
     [SerializeField] private LayerMask HitteableLayer;
     [SerializeField] private int Damage;
     [SerializeField][Range(0,1)] private float MinDamagePercentage;
-    [SerializeField] private float MaxCastRadius = 5f, MaxReleaseRadius;
+    [SerializeField] private float MaxCastRadius = 5f, MaxReleaseRadius = 20f;
 
 
     [Header("Spear Settings")]
@@ -19,15 +20,13 @@ public class RipAndTear : MonoBehaviour
     [SerializeField][Range(90,135)] private float MaxRotationZ;
     [SerializeField] private GameObject SpearPrefab;
 
-    [Header("Other Settings")]
-    [SerializeField] private SphereCollider ReleaseCollider;
-    
+    private float _rotationVelocity;
+    [SerializeField]private int SpearNumber = 0;
 
     private void OnEnable()
     {
         EventManager.Instance.OnSpellCast += CastSpell;
         EventManager.Instance.OnSpellRelease += ReleaseSpell;
-        ReleaseCollider.enabled = false;
     }
 
     private void OnDisable()
@@ -44,49 +43,53 @@ public class RipAndTear : MonoBehaviour
 
         if(Physics.Raycast(ray, out hit, MaxCastRadius, HitteableLayer))
         {
-            
-
             GameObject SpawnParent = GameObject.Find($"/{hit.transform.name}/Center");
             Vector3 SpearSpawnRotation = new Vector3(
-                x: Random.Range(0, MaxRotationX),
-                y: Random.Range(0, MaxRotationY),
-                z: Random.Range(90, MaxRotationZ)
+                x: 0,
+                y: 0,
+                z: 0
                 );
             Vector3 SpearSpawnScale = new Vector3(0.05f, .5f, 0.05f);
             Vector3 SpearSpawnPosition = SpawnParent.transform.position;
 
-
             GameObject SpawnedSpear = Instantiate(SpearPrefab, SpawnParent.transform);
-            SpawnedSpear.transform.rotation = Quaternion.Euler(SpearSpawnRotation);
+            SpawnedSpear.transform.name = $"Spear{SpearNumber}";
+            SpearNumber++;
             SpawnedSpear.transform.localScale = SpearSpawnScale;
             SpawnedSpear.transform.position = SpearSpawnPosition;
+            SpawnedSpear.transform.LookAt(transform.position);
+            SpearPrefab.transform.rotation = Quaternion.Euler(SpearPrefab.transform.rotation.eulerAngles * -1) ;
 
+            //float DesiredAngle = Vector3.Angle(transform.forward, hit.transform.position - transform.position);
+            //StartCoroutine(LookAtTarget(DesiredAngle));
         }
     }
 
     private void ReleaseSpell()
     {
-        Debug.Log("ReleaseSpell - Spell");
+        Collider[] HittedEnemiesColliders = Physics.OverlapSphere(transform.position, MaxReleaseRadius, HitteableLayer);
 
-        //ReleaseCollider.radius = MaxReleaseRadius;
-        StartCoroutine(ColliderRadiusIncrementer());
-        ReleaseCollider.enabled = true;
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"Collider Casted {other.transform.name}");
-
-        //ReleaseCollider.enabled = false;
-    }
-
-    IEnumerator ColliderRadiusIncrementer()
-    {
-        for (int i = 0; i <= MaxReleaseRadius; i++)
+        foreach (var EnemyInArea in HittedEnemiesColliders)
         {
-            ReleaseCollider.radius = i;
-            yield return new WaitForSeconds(.1f);
+            if (GameObject.Find($"/{EnemyInArea.gameObject.name}/Center") != null)
+            {
+                foreach (Transform Spear in GameObject.Find($"/{EnemyInArea.gameObject.name}/Center").transform)
+                {
+                    Destroy(Spear.gameObject);
+                    SpearNumber = 0;
+                }
+            }
+        }
+
+    }
+
+    IEnumerator LookAtTarget(float DesiredAngle)
+    {
+        while (transform.eulerAngles.y != DesiredAngle)
+        {
+            Quaternion DesiredRotation = Quaternion.Euler(transform.eulerAngles.x, DesiredAngle, transform.eulerAngles.z);
+            transform.rotation = Quaternion.Lerp(transform.rotation, DesiredRotation, Time.deltaTime * 10f);
+            yield return null;
         }
     }
 }

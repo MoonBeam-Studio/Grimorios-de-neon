@@ -51,13 +51,11 @@ namespace StarterAssets
 
         private void OnCastSpell()
         {
-			Debug.Log("CastSpell - Input");
             EventManager.Instance.SpellCastEvent();
         }
 
 		private void OnReleaseSpell()
 		{
-            Debug.Log("ReleaseSpell - Input");
             EventManager.Instance.SpellReleaseEvent();
         }
 #endif
