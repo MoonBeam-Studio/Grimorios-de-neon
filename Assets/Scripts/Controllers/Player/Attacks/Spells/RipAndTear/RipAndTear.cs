@@ -23,6 +23,8 @@ public class RipAndTear : MonoBehaviour
     private float _rotationVelocity;
     [SerializeField]private int SpearNumber = 0;
 
+    private Spear SpearController;
+
     private void OnEnable()
     {
         EventManager.Instance.OnSpellCast += CastSpell;
@@ -58,10 +60,10 @@ public class RipAndTear : MonoBehaviour
             SpawnedSpear.transform.localScale = SpearSpawnScale;
             SpawnedSpear.transform.position = SpearSpawnPosition;
             SpawnedSpear.transform.LookAt(transform.position);
-            SpearPrefab.transform.rotation = Quaternion.Euler(SpearPrefab.transform.rotation.eulerAngles * -1) ;
+            SpawnedSpear.transform.rotation = Quaternion.Euler(SpawnedSpear.transform.rotation.eulerAngles * -1) ;
 
-            //float DesiredAngle = Vector3.Angle(transform.forward, hit.transform.position - transform.position);
-            //StartCoroutine(LookAtTarget(DesiredAngle));
+            SpearController = SpawnedSpear.GetComponent<Spear>();
+            SpearController.SpearDestination = SpearSpawnPosition;
         }
     }
 
