@@ -10,6 +10,8 @@ public class EventManager : MonoBehaviour
     // Delegates and Events \\
 
     //-| Player
+
+
     //--| Misc
     public delegate void CameraSwich();
     public event CameraSwich OnCameraSwich;
