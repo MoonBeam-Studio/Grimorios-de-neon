@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EventManager : MonoBehaviour
@@ -10,7 +11,9 @@ public class EventManager : MonoBehaviour
     // Delegates and Events \\
 
     //-| Player
-
+    //--|Habilities
+    public delegate void Glich();
+    public event Glich OnGlich;
 
     //--| Misc
     public delegate void CameraSwich();
@@ -28,6 +31,9 @@ public class EventManager : MonoBehaviour
     // Events Invoking \\
 
     //-| Player
+    //--|Habilities
+    public void GlichEvent() { OnGlich?.Invoke(); Debug.Log("Glich | Event"); }
+
     //--| Misc
     public void SwitchCameraEvent() => OnCameraSwich?.Invoke();
 

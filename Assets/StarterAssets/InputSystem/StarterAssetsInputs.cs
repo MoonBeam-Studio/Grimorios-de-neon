@@ -58,6 +58,12 @@ namespace StarterAssets
 		{
             EventManager.Instance.SpellReleaseEvent();
         }
+
+        private void OnGlich()
+        {
+			EventManager.Instance.GlichEvent();
+			Debug.Log("Glich | Input");
+        }
 #endif
 
 
