@@ -9,7 +9,7 @@ public class RipAndTear : MonoBehaviour
     [Header("Common Settings")]
     [SerializeField] private Transform CameraTransform;
     [SerializeField] private LayerMask HitteableLayer;
-    [SerializeField] private int Damage;
+    [SerializeField] private int Damage, ManaCost = 2;
     [SerializeField][Range(0,1)] private float MinDamagePercentage;
     [SerializeField] private float MaxCastRadius = 5f, MaxReleaseRadius = 20f;
 
@@ -20,10 +20,15 @@ public class RipAndTear : MonoBehaviour
     [SerializeField][Range(90,135)] private float MaxRotationZ;
     [SerializeField] private GameObject SpearPrefab;
 
-    private float _rotationVelocity;
     [SerializeField]private int SpearNumber = 0;
 
     private Spear SpearController;
+    private PlayerResourceMangerScript _resourceManager;
+
+    private void Awake()
+    {
+        _resourceManager = GetComponent<PlayerResourceMangerScript>();
+    }
 
     private void OnEnable()
     {
@@ -39,11 +44,10 @@ public class RipAndTear : MonoBehaviour
 
     private void CastSpell()
     {
-        Debug.Log("CastSpell - Spell");
         RaycastHit hit;
         Ray ray = new Ray(CameraTransform.position, CameraTransform.forward);
 
-        if(Physics.Raycast(ray, out hit, MaxCastRadius, HitteableLayer))
+        if(Physics.Raycast(ray, out hit, MaxCastRadius, HitteableLayer) && _resourceManager.SpendMana(ManaCost))
         {
             GameObject SpawnParent = GameObject.Find($"/{hit.transform.name}/Center");
             Vector3 SpearSpawnRotation = new Vector3(

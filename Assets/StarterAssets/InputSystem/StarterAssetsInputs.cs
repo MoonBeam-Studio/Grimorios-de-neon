@@ -62,7 +62,6 @@ namespace StarterAssets
         private void OnGlich()
         {
 			EventManager.Instance.GlichEvent();
-			Debug.Log("Glich | Input");
         }
 #endif
 

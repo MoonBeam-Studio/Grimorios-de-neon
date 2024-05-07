@@ -3812,10 +3812,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1366587070}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b005266be8f16ea4ab96767b7118acba,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1366587071}
   m_SourcePrefab: {fileID: 100100000, guid: b005266be8f16ea4ab96767b7118acba, type: 3}
 --- !u!4 &1366587069 stripped
 Transform:
@@ -3846,18 +3842,6 @@ CapsuleCollider:
   m_Height: 1.7947724
   m_Direction: 1
   m_Center: {x: -0, y: 0.9046875, z: -0.025365055}
---- !u!114 &1366587071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431763522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d3f6af7f9ec824c945469d0990cabb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1372022630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4303679674140607531, guid: 64dce48905ffd9b4293e595fa6941544,
@@ -4403,6 +4387,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   Damage: 10
+  ManaCost: 2
   MinDamagePercentage: 0.4
   MaxCastRadius: 5
   MaxReleaseRadius: 20
@@ -4511,7 +4496,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054b01a0f15bd8544901cd9021aac6c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunTimeData: {fileID: 11400000, guid: b0196b639e5fabb4cb6176077e06e582, type: 2}
+  _runTimeData: {fileID: 11400000, guid: b0196b639e5fabb4cb6176077e06e582, type: 2}
+  ManaTime: 5
+  EnergyTime: 5
+  ManaRegenPerSecond: 1
+  EnergyRegenPerSecond: 1
+  Vida: 0
+  Mana: 0
+  Energia: 0
 --- !u!114 &1788444154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4524,13 +4516,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5038cb4cb88cb40a8f336f72ebcb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InCombat: 1
+  InCombat: 0
+  EnergyPerSecond: 1
+  InGlichState: 0
   GlicheableLayers:
     serializedVersion: 2
     m_Bits: 1536
   NoneLayer:
     serializedVersion: 2
     m_Bits: 0
+  SpeedBoost: 1.4
 --- !u!4 &1819118810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6256634600695244910, guid: 64dce48905ffd9b4293e595fa6941544,

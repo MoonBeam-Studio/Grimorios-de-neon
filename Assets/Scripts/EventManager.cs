@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
 
     //-| Player
     //--|Habilities
-    public void GlichEvent() { OnGlich?.Invoke(); Debug.Log("Glich | Event"); }
+    public void GlichEvent() => OnGlich?.Invoke();
 
     //--| Misc
     public void SwitchCameraEvent() => OnCameraSwich?.Invoke();

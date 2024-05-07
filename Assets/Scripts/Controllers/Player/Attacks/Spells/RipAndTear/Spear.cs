@@ -24,7 +24,7 @@ public class Spear : MonoBehaviour
 
         transform.position = new Vector3(Player.position.x, (Head.position.y + 1), Player.position.z);
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles * -1);
-        Debug.Log("Spear");
+
         StartCoroutine(GetToPosition());
         ChainPositions();
     }
@@ -46,7 +46,6 @@ public class Spear : MonoBehaviour
         float Distance = Vector3.Distance(SpearOrigin, SpearDestination);
         float RemainingDistance = Distance;
 
-        Debug.Log(RemainingDistance);
         while (transform.position != SpearDestination) 
         {
 
