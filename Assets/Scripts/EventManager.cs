@@ -16,8 +16,8 @@ public class EventManager : MonoBehaviour
     public event Glich OnGlich;
 
     //--| Misc
-    public delegate void CameraSwich();
-    public event CameraSwich OnCameraSwich;
+    public delegate void ShowAim();
+    public event ShowAim OnShowAim;
 
     //--| Attack
     //---| Spells
@@ -35,7 +35,7 @@ public class EventManager : MonoBehaviour
     public void GlichEvent() => OnGlich?.Invoke();
 
     //--| Misc
-    public void SwitchCameraEvent() => OnCameraSwich?.Invoke();
+    public void ShowAimEvent() => OnShowAim?.Invoke();
 
     //--| Attack
     //---| Spells

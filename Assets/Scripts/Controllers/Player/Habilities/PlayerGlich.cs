@@ -3,20 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Resources;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerGlich : MonoBehaviour
 {
     public bool InCombat;
     public int EnergyPerSecond;
 
-    public bool InGlichState;
+    public bool InGlichState, IsDodgin;
     private CharacterController _characterController;
     private StarterAssetsInputs _inputs;
     private PlayerResourceMangerScript _resourceManager;
     private ThirdPersonController _thirdPersonController;
 
-    [SerializeField] private LayerMask GlicheableLayers;
-    [SerializeField] private LayerMask NoneLayer;
+    [SerializeField] private LayerMask GlicheableLayers,DodgeableLayers,NoneLayer;
     [SerializeField] private float SpeedBoost;
 
     private void Awake()
@@ -35,6 +35,7 @@ public class PlayerGlich : MonoBehaviour
             _thirdPersonController.MoveSpeed = 2 * (1 + SpeedBoost);
             _thirdPersonController.SprintSpeed = 5.335f * (1 + SpeedBoost);
         }
+        else if(IsDodgin) _characterController.excludeLayers = DodgeableLayers;
         else
         {
             _characterController.excludeLayers = NoneLayer;
@@ -56,7 +57,7 @@ public class PlayerGlich : MonoBehaviour
 
     private void GlichActivate()
     {
-        if (InCombat) GlichDodge();
+        if (InCombat) StartCoroutine(GlichDodge());
         else GlichState();
     }
 
@@ -73,9 +74,14 @@ public class PlayerGlich : MonoBehaviour
         }
     }
 
-    private void GlichDodge()
+    private IEnumerator GlichDodge()
     {
+        Debug.Log("Dodge");
+        IsDodgin = true;
+        yield return new WaitForSeconds(0.05f);
         _characterController.Move(new Vector3(_inputs.move.x, 0, _inputs.move.y)*.1f);
+        yield return new WaitForSeconds(0.5f);
+        IsDodgin = false;
     }
 
     private IEnumerator ConsumeEnergy()

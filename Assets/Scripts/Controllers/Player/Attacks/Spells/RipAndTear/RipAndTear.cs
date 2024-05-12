@@ -7,7 +7,7 @@ public class RipAndTear : MonoBehaviour
 {
     
     [Header("Common Settings")]
-    [SerializeField] private Transform CameraTransform;
+    [SerializeField] private Transform RayOriginTransform;
     [SerializeField] private LayerMask HitteableLayer;
     [SerializeField] private int Damage, ManaCost = 2;
     [SerializeField][Range(0,1)] private float MinDamagePercentage;
@@ -45,10 +45,13 @@ public class RipAndTear : MonoBehaviour
     private void CastSpell()
     {
         RaycastHit hit;
-        Ray ray = new Ray(CameraTransform.position, CameraTransform.forward);
-
-        if(Physics.Raycast(ray, out hit, MaxCastRadius, HitteableLayer) && _resourceManager.SpendMana(ManaCost))
+        Ray ray = new Ray(RayOriginTransform.position, RayOriginTransform.forward);
+        Debug.Log("Spell trying to cast");
+        Debug.DrawLine(RayOriginTransform.position, RayOriginTransform.forward * 5, Color.red, 3f);
+        if (Physics.Raycast(ray, out hit, MaxCastRadius, HitteableLayer) && _resourceManager.SpendMana(ManaCost))
+        //if(Physics.BoxCast(RayOriginTransform.position,new Vector3(transform.localScale.x, transform.localScale.y/2,MaxCastRadius), transform.forward, out hit, transform.rotation, MaxCastRadius, HitteableLayer) && _resourceManager.SpendMana(ManaCost))
         {
+            Debug.Log("Spell Casted");
             GameObject SpawnParent = GameObject.Find($"/{hit.transform.name}/Center");
             Vector3 SpearSpawnRotation = new Vector3(
                 x: 0,

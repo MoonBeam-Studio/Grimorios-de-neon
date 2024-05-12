@@ -44,9 +44,9 @@ namespace StarterAssets
 			SprintInput(value.isPressed);
 		}
 
-        private void OnCameraSwitch()
+        private void OnAim()
         {
-            EventManager.Instance.SwitchCameraEvent();
+            EventManager.Instance.ShowAimEvent();
         }
 
         private void OnCastSpell()
