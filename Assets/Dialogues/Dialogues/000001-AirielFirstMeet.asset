@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: 000001-AirielFirstMeet
+  m_EditorClassIdentifier: 
+  NodeLinkDatas:
+  - BaseNodeGuid: 076cc28a-4857-497a-bc85-3cb2c5a1c753
+    TargetNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
+  - BaseNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
+    TargetNodeGuid: 315bb88d-3778-40c0-bfdc-6242758a5bf7
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
+    Position: {x: 364, y: 15}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Hola
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  EndNodeDatas:
+  - NodeGuid: 315bb88d-3778-40c0-bfdc-6242758a5bf7
+    Position: {x: 667, y: 54}
+    EndNodeType: 0
+  StartNodeDatas:
+  - NodeGuid: 076cc28a-4857-497a-bc85-3cb2c5a1c753
+    Position: {x: 210, y: 14}
+    startID: 
+  TimerChoiceNodeDatas: []
+  EventNodeDatas: []
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IFNodeDatas: []
