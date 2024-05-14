@@ -28,6 +28,11 @@ namespace MEET_AND_TALK
         private FloatField duration_Field;
         private ObjectField character_Field;
 
+        public AvatarPosition avatarPosition;
+        public AvatarType avatarType;
+        private EnumField AvatarPositionField;
+        private EnumField AvatarTypeField;
+
         public DialogueChoiceNode()
         {
 
@@ -87,6 +92,23 @@ namespace MEET_AND_TALK
             });
             character_Field.SetValueWithoutNotify(character);
             mainContainer.Add(character_Field);
+
+            AvatarPositionField = new EnumField("Avatar Position", avatarPosition);
+            AvatarPositionField.RegisterValueChangedCallback(value =>
+            {
+                avatarPosition = (AvatarPosition)value.newValue;
+            });
+            AvatarPositionField.SetValueWithoutNotify(avatarPosition);
+            mainContainer.Add(AvatarPositionField);
+
+
+            AvatarTypeField = new EnumField("Avatar Emotion", avatarType);
+            AvatarTypeField.RegisterValueChangedCallback(value =>
+            {
+                avatarType = (AvatarType)value.newValue;
+            });
+            AvatarTypeField.SetValueWithoutNotify(avatarType);
+            mainContainer.Add(AvatarTypeField);
 
 
             /* TEXT BOX */
@@ -162,6 +184,8 @@ namespace MEET_AND_TALK
         {
             texts_Field.SetValueWithoutNotify(texts.Find(language => language.languageEnum == editorWindow.LanguageEnum).LanguageGenericType);
             character_Field.SetValueWithoutNotify(character);
+            AvatarPositionField.SetValueWithoutNotify(avatarPosition);
+            AvatarTypeField.SetValueWithoutNotify(avatarType);
             audioClips_Field.SetValueWithoutNotify(audioClip.Find(language => language.languageEnum == editorWindow.LanguageEnum).LanguageGenericType);
             duration_Field.SetValueWithoutNotify(durationShow);
         }
@@ -177,6 +201,7 @@ namespace MEET_AND_TALK
             else { outputPortName = $"Choice {outputPortCount + 1}"; }
 
             DialogueNodePort dialogueNodePort = new DialogueNodePort();
+            dialogueNodePort.PortGuid = Guid.NewGuid().ToString(); //NOWE
 
             foreach (LocalizationEnum language in (LocalizationEnum[])Enum.GetValues(typeof(LocalizationEnum)))
             {
@@ -191,6 +216,9 @@ namespace MEET_AND_TALK
             {
                 dialogueNodePort.InputGuid = _dialogueNodePort.InputGuid;
                 dialogueNodePort.OutputGuid = _dialogueNodePort.OutputGuid;
+
+                if (_dialogueNodePort.PortGuid == "") { _dialogueNodePort.PortGuid = Guid.NewGuid().ToString(); } //NOWE
+                dialogueNodePort.PortGuid = _dialogueNodePort.PortGuid; //NOWE
 
                 foreach (LanguageGeneric<string> languageGeneric in _dialogueNodePort.TextLanguage)
                 {

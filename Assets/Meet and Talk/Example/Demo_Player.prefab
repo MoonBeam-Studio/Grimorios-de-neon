@@ -372,9 +372,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' free version
+  m_text: '
 
-    Meet and talk - 1.4.0a'
+    Meet and talk - 1.5.0a'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}
   m_sharedMaterial: {fileID: 2056827177825714979, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}

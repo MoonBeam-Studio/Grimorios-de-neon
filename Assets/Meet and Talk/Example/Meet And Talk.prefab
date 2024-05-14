@@ -818,7 +818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &297596205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2582,7 +2582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &831900941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4529,7 +4529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1423737988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6140,7 +6140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2081471105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6238,7 +6238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6449620582421578799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8738,6 +8738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f5579e301c9f74ca2a2f9127927566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnableTypeWriting: 1
+  typingSpeed: 75
   showSeparateName: 0
   nameTextBox: {fileID: 0}
   textBox: {fileID: 6750716296750222173}
@@ -10449,7 +10451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &732266850113612567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10766,14 +10768,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoManSky_Btn
       objectReference: {fileID: 0}
-    - target: {fileID: 8691483030096807955, guid: 2cab2fb15d3ed964d971ca6dd8139f38, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 8691483030096807955, guid: 2cab2fb15d3ed964d971ca6dd8139f38, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cab2fb15d3ed964d971ca6dd8139f38, type: 3}
 --- !u!224 &6217400610221747511 stripped
@@ -10982,14 +10976,6 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 8039314888848468056, guid: 61ea451b64dbbc44898a633ebd2e38d1, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 8039314888848468056, guid: 61ea451b64dbbc44898a633ebd2e38d1, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ea451b64dbbc44898a633ebd2e38d1, type: 3}
 --- !u!224 &731569551920586955 stripped

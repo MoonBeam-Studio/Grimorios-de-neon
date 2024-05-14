@@ -21,8 +21,6 @@ MonoBehaviour:
     TargetNodeGuid: 21d5cf27-0301-4b08-9d7c-b4c510d14ee7
   - BaseNodeGuid: 21d5cf27-0301-4b08-9d7c-b4c510d14ee7
     TargetNodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
-  - BaseNodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
-    TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
   - BaseNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
     TargetNodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
   - BaseNodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
@@ -31,6 +29,8 @@ MonoBehaviour:
     TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
   - BaseNodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
     TargetNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
+  - BaseNodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
+    TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
   - BaseNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
     TargetNodeGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
   - BaseNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
@@ -39,14 +39,16 @@ MonoBehaviour:
   - NodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
     Position: {x: 597, y: -104}
     DialogueNodePorts:
-    - InputGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
+    - PortGuid: 07afc7f5-61f5-473f-8198-978aa4270ff0
+      InputGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
       OutputGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
       TextLanguage:
       - languageEnum: 0
         LanguageGenericType: Answer First
       - languageEnum: 1
         LanguageGenericType: "Odpowied\u017A Pierwsza"
-    - InputGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
+    - PortGuid: a95ea62f-823d-4d47-85f6-5e35f79ff543
+      InputGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
       OutputGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
       TextLanguage:
       - languageEnum: 0
@@ -119,23 +121,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: Jayden
     Duration: 2
-  - NodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
-    Position: {x: 945, y: 131}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: e4894b28346dca34583e73dc42af6e01, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 8300000, guid: b7069ecf66d5aa643bac0ad6223d66a7, type: 3}
-    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I choose answer two
-    - languageEnum: 1
-      LanguageGenericType: "Wybieram odpowied\u017C drug\u0105"
-    Duration: 3
   - NodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
     Position: {x: 1199, y: 30}
     DialogueNodePorts: []
@@ -207,16 +192,40 @@ MonoBehaviour:
       LanguageGenericType: "To co teraz widzisz, jest to demo przyk\u0142adowego
         dialogu."
     Duration: 7
+  - NodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
+    Position: {x: 945, y: 184}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: e4894b28346dca34583e73dc42af6e01, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 8300000, guid: b7069ecf66d5aa643bac0ad6223d66a7, type: 3}
+    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I choose answer two
+    - languageEnum: 1
+      LanguageGenericType: "Wybieram odpowied\u017C drug\u0105"
+    Duration: 3
+  TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7187faa9-3131-478a-916d-786974f7991c
     Position: {x: 1676, y: 30}
     EndNodeType: 0
+  EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 9d113ae3-aa9f-4cb8-9bab-6dc4df886d32
     Position: {x: -501, y: -104}
     startID: 
-  TimerChoiceNodeDatas: []
-  EventNodeDatas: []
   RandomNodeDatas: []
   CommandNodeDatas: []
-  IFNodeDatas: []
+  IfNodeDatas:
+  - NodeGuid: 1ce30508-9160-470a-a143-e087cc7f9780
+    Position: {x: 1054, y: 966}
+    ValueName: DEMO_Level
+    Operations: 0
+    OperationValue: 1
+    TrueGUID: 
+    FalseGUID: 

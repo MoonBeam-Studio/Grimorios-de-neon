@@ -27,6 +27,17 @@ namespace MEET_AND_TALK
             outputContainer.Add(outputPort);
         }
 
+        public void AddOutputPort(string name, string className, Port.Capacity capality = Port.Capacity.Single)
+        {
+            Port outputPort = GetPortInstance(Direction.Output, capality);
+            outputPort.portName = name;
+            outputPort.AddToClassList(className);
+
+            outputContainer.Add(outputPort);
+
+            Debug.Log((outputPort.node as BaseNode).nodeGuid);
+        }
+
         public void AddInputPort(string name, Port.Capacity capality = Port.Capacity.Single)
         {
             Port inputPort = GetPortInstance(Direction.Input, capality);

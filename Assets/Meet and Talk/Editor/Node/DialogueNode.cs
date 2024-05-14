@@ -29,6 +29,11 @@ namespace MEET_AND_TALK
         private ObjectField character_Field;
         private FloatField duration_Field;
 
+        public AvatarPosition avatarPosition;
+        public AvatarType avatarType;
+        private EnumField AvatarPositionField;
+        private EnumField AvatarTypeField;
+
         public DialogueNode()
         {
 
@@ -90,6 +95,23 @@ namespace MEET_AND_TALK
             character_Field.SetValueWithoutNotify(character);
             mainContainer.Add(character_Field);
 
+            AvatarPositionField = new EnumField("Avatar Position",avatarPosition);
+            AvatarPositionField.RegisterValueChangedCallback(value =>
+            {
+                avatarPosition = (AvatarPosition)value.newValue;
+            });
+            AvatarPositionField.SetValueWithoutNotify(avatarPosition);
+            mainContainer.Add(AvatarPositionField);
+
+
+            AvatarTypeField = new EnumField("Avatar Emotion", avatarType);
+            AvatarTypeField.RegisterValueChangedCallback(value =>
+            {
+                avatarType = (AvatarType)value.newValue;
+            });
+            AvatarTypeField.SetValueWithoutNotify(avatarType);
+            mainContainer.Add(AvatarTypeField);
+
             /* TEXT BOX */
             Label label_texts = new Label("Displayed Text");
             label_texts.AddToClassList("label_texts");
@@ -144,6 +166,8 @@ namespace MEET_AND_TALK
             texts_Field.SetValueWithoutNotify(texts.Find(language => language.languageEnum == editorWindow.LanguageEnum).LanguageGenericType);
             audioClips_Field.SetValueWithoutNotify(audioClip.Find(language => language.languageEnum == editorWindow.LanguageEnum).LanguageGenericType);
             character_Field.SetValueWithoutNotify(character);
+            AvatarPositionField.SetValueWithoutNotify(avatarPosition);
+            AvatarTypeField.SetValueWithoutNotify(avatarType);
             duration_Field.SetValueWithoutNotify(durationShow);
         }
     }

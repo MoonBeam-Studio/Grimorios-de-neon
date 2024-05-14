@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 356612171012364914}
   - component: {fileID: 6411483760209898514}
   - component: {fileID: 4114517942361587551}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: circle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4831,7 +4831,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243925938786845285}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4908,7 +4908,7 @@ GameObject:
   - component: {fileID: 3658115525670924762}
   - component: {fileID: 4302336307973278282}
   - component: {fileID: 6823462400349085387}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: glow_centr_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9670,7 +9670,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340349270768958539}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9749,13 +9749,14 @@ GameObject:
   - component: {fileID: 6943264497641664287}
   - component: {fileID: 4311242641036798289}
   - component: {fileID: 3751955584295413235}
-  m_Layer: 0
+  - component: {fileID: 5520396119679354527}
+  m_Layer: 5
   m_Name: Airiel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8704865594862116524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14514,7 +14515,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569474118194307289}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -14629,6 +14630,27 @@ MonoBehaviour:
   m_PositionMode: 0
   m_AutoScaling: 0
   m_AutoScalingMode: 2
+--- !u!114 &5520396119679354527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569474118194307289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274f282f4aaeb114b82f239074c158b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AirielParticleSystem:
+  - {fileID: 5050580440064496261}
+  - {fileID: 2891759669536844174}
+  - {fileID: 4302336307973278282}
+  - {fileID: 6411483760209898514}
+  - {fileID: 4874335743038187936}
+  - {fileID: 779183510179886221}
+  - {fileID: 7181066330547647204}
+  - {fileID: 7489651059864566581}
 --- !u!1 &1723172220016150723
 GameObject:
   m_ObjectHideFlags: 0
@@ -14640,7 +14662,7 @@ GameObject:
   - component: {fileID: 449474329475811298}
   - component: {fileID: 2891759669536844174}
   - component: {fileID: 5081035819198469901}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: glow_centr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19402,7 +19424,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723172220016150723}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -19479,7 +19501,7 @@ GameObject:
   - component: {fileID: 1251071172924693119}
   - component: {fileID: 5050580440064496261}
   - component: {fileID: 6604578947548299047}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: det_01_ad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24311,7 +24333,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4130261962389457989}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -24388,7 +24410,7 @@ GameObject:
   - component: {fileID: 8523896812739853164}
   - component: {fileID: 4874335743038187936}
   - component: {fileID: 5664129456573493023}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: det_01_ad_start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29220,7 +29242,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5893365739905468797}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -29297,7 +29319,7 @@ GameObject:
   - component: {fileID: 7153770860919676697}
   - component: {fileID: 7181066330547647204}
   - component: {fileID: 375090778419974203}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: circle_02_start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34108,7 +34130,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8062185538599344933}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -34185,7 +34207,7 @@ GameObject:
   - component: {fileID: 3545374572417739021}
   - component: {fileID: 779183510179886221}
   - component: {fileID: 2276905129724859097}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: glow_centr_start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39005,7 +39027,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8600084551718657783}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -39082,7 +39104,7 @@ GameObject:
   - component: {fileID: 8775893977272423577}
   - component: {fileID: 7489651059864566581}
   - component: {fileID: 3049074216897462743}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: detail_motion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43844,7 +43866,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9158246066257638675}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

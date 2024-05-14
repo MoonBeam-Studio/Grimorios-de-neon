@@ -9,11 +9,11 @@ public class Triggerdialogue : MonoBehaviour
     [SerializeField] private DialogueManager DialogueManager;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.CompareTag("Player"))
-        {
+        //if (other.CompareTag("Player"))
+        //{
             DialogueManager.StartDialogue(Dialogue);
-        }
+        //}
     }
 }

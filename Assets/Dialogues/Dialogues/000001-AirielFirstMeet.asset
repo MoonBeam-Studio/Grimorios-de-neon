@@ -13,14 +13,208 @@ MonoBehaviour:
   m_Name: 000001-AirielFirstMeet
   m_EditorClassIdentifier: 
   NodeLinkDatas:
-  - BaseNodeGuid: 076cc28a-4857-497a-bc85-3cb2c5a1c753
+  - BaseNodeGuid: 773e1e59-c53b-45dd-b876-9f91dcb437aa
+    TargetNodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
+  - BaseNodeGuid: 2cd398f1-b198-465c-9edb-152f18d7ef23
+    TargetNodeGuid: 50a7062e-6feb-4dd4-b22a-ad2b06908246
+  - BaseNodeGuid: 50a7062e-6feb-4dd4-b22a-ad2b06908246
+    TargetNodeGuid: 42033bbf-df17-41cc-82e3-30d59378c3fd
+  - BaseNodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
     TargetNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
+  - BaseNodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
+    TargetNodeGuid: 2f7befbd-6667-4b13-a071-874dd9673d77
+  - BaseNodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
+    TargetNodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
   - BaseNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
-    TargetNodeGuid: 315bb88d-3778-40c0-bfdc-6242758a5bf7
+    TargetNodeGuid: 73f0b8cc-5a4b-422d-a089-04186491ecd1
+  - BaseNodeGuid: 73f0b8cc-5a4b-422d-a089-04186491ecd1
+    TargetNodeGuid: 2cd398f1-b198-465c-9edb-152f18d7ef23
+  - BaseNodeGuid: 42033bbf-df17-41cc-82e3-30d59378c3fd
+    TargetNodeGuid: 6f3d7d8b-c90c-43ec-9888-ce0a2b56161c
+  - BaseNodeGuid: 6f3d7d8b-c90c-43ec-9888-ce0a2b56161c
+    TargetNodeGuid: 5a9432c3-48a9-4d46-9a65-33ab2ed6bffa
+  - BaseNodeGuid: 1283378a-c567-4224-a0b1-7b1b0c17d521
+    TargetNodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
+  - BaseNodeGuid: 5a9432c3-48a9-4d46-9a65-33ab2ed6bffa
+    TargetNodeGuid: 1283378a-c567-4224-a0b1-7b1b0c17d521
+  - BaseNodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
+    TargetNodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
+  - BaseNodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
+    TargetNodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
+  - BaseNodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
+    TargetNodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
+  - BaseNodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
+    TargetNodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
+  - BaseNodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
+    TargetNodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
+  - BaseNodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
+    TargetNodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
+  - BaseNodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
+    TargetNodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
+  - BaseNodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
+    TargetNodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
+  - BaseNodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
+    TargetNodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
+  - BaseNodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
+    TargetNodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
-    Position: {x: 364, y: 15}
+    Position: {x: -465, y: -75}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 
+    - languageEnum: 1
+      LanguageGenericType: Test
+    Duration: 4
+  - NodeGuid: 73f0b8cc-5a4b-422d-a089-04186491ecd1
+    Position: {x: -243, y: -75}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Despierta'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 42033bbf-df17-41cc-82e3-30d59378c3fd
+    Position: {x: 669, y: -76}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Gracias a los dioses te has recuperado'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 6f3d7d8b-c90c-43ec-9888-ce0a2b56161c
+    Position: {x: 949, y: -82}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Que...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 1283378a-c567-4224-a0b1-7b1b0c17d521
+    Position: {x: 1479, y: -80}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Quien habla . . .
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 5a9432c3-48a9-4d46-9a65-33ab2ed6bffa
+    Position: {x: 1207, y: -81}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Donde estoy . . .
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
+    Position: {x: 1981, y: -80}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ???:No me recuerdas?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
+    Position: {x: 2222, y: -87}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "???: En el proceso se habra da\xF1ado tu <i>modulo de
+        memoria</i>."
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
+    Position: {x: 2461, y: -88}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Soy <size=120%><color=#DC70FA>Airiel</color></size>.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
+    Position: {x: 2731, y: -89}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -32,20 +226,149 @@ MonoBehaviour:
     AvatarType: 0
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Hola
+      LanguageGenericType: Soy una Inteligencia Artificial implantada en tu cerebro.
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 10
-  EndNodeDatas:
-  - NodeGuid: 315bb88d-3778-40c0-bfdc-6242758a5bf7
-    Position: {x: 667, y: 54}
-    EndNodeType: 0
-  StartNodeDatas:
-  - NodeGuid: 076cc28a-4857-497a-bc85-3cb2c5a1c753
-    Position: {x: 210, y: 14}
-    startID: 
+    Duration: 4
+  - NodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
+    Position: {x: 2966, y: -88}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Se que ahora no me recuerdas
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
+    Position: {x: 3197, y: -86}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: y que todo debe estar muy confuso para ti.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
+    Position: {x: 3439, y: -85}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Pero debes regresar
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
+    Position: {x: 3661, y: -75}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: la ciudad te necesita
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
+    Position: {x: 3918, y: -79}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sube las escaleras y vuelve al mundo real
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
+    Position: {x: 1734, y: -80}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Como . . .'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
   TimerChoiceNodeDatas: []
-  EventNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 2f7befbd-6667-4b13-a071-874dd9673d77
+    Position: {x: 5077, y: -83}
+    EndNodeType: 0
+  EventNodeDatas:
+  - NodeGuid: 2cd398f1-b198-465c-9edb-152f18d7ef23
+    Position: {x: -10, y: -75}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 3c6f8975bbe9b864db813dd2a3008180,
+        type: 2}
+  - NodeGuid: 50a7062e-6feb-4dd4-b22a-ad2b06908246
+    Position: {x: 318, y: -76}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 0}
+    - DialogueEventSO: {fileID: 0}
+    - DialogueEventSO: {fileID: 11400000, guid: 3ad4d4b9bd662204fb547363b60be99d,
+        type: 2}
+  - NodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
+    Position: {x: -809, y: -75}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
+        type: 2}
+  - NodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
+    Position: {x: 4141, y: -67}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
+        type: 2}
+  - NodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
+    Position: {x: 4456, y: -83}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 3ad4d4b9bd662204fb547363b60be99d,
+        type: 2}
+  StartNodeDatas:
+  - NodeGuid: 773e1e59-c53b-45dd-b876-9f91dcb437aa
+    Position: {x: -934, y: -102}
+    startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []
-  IFNodeDatas: []
+  IfNodeDatas: []

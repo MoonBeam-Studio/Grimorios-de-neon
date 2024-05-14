@@ -123,7 +123,7 @@ namespace MEET_AND_TALK
 
     public enum MeetAndTalkTheme
     {
-        Dark = 0, PureDark = 1,
+        Dark = 0, PureDark = 1, Category = 2
         //Light = 2, PureLight = 3
     }
 }

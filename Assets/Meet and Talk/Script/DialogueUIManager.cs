@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using System.Text.RegularExpressions;
 
 namespace MEET_AND_TALK
 {
     public class DialogueUIManager : MonoBehaviour
     {
         public static DialogueUIManager Instance;
+
+        [Header("Type Writing")]
+        public bool EnableTypeWriting = false;
+        public float typingSpeed = 50.0f;
 
         [Header("Dialogue UI")]
         public bool showSeparateName = false;
@@ -40,15 +45,35 @@ namespace MEET_AND_TALK
         private void Awake()
         {
             Instance = this;
-            SpriteLeft.SetActive(false);
-            SpriteRight.SetActive(false);
+            if(EnableTypeWriting) lastTypingTime = Time.time;
         }
 
         private void Update()
         {
+            if (characterIndex < fullText.Length && EnableTypeWriting)
+            {
+                if (Time.time - lastTypingTime > 1.0f / typingSpeed)
+                {
+                    if (fullText[characterIndex].ToString() == "<")
+                    {
+                        while(fullText[characterIndex].ToString() != ">")
+                        {
+                            currentText += fullText[characterIndex];
+                            characterIndex++;
+                        }
+                        currentText += fullText[characterIndex];
+                        characterIndex++;
+                        textBox.text = currentText;
+                    }
+                    else { currentText += fullText[characterIndex]; characterIndex++; textBox.text = currentText; }
 
+                    lastTypingTime = Time.time;
+                }
+            }
+            else
+            {
                 textBox.text = prefixText+fullText;
-            
+            }
         }
 
         public void ResetText(string prefix)
@@ -56,6 +81,27 @@ namespace MEET_AND_TALK
             currentText = prefix;
             prefixText = prefix;
             characterIndex = 0;
+
+            // dodaj t¹ opcje tutaj
+        }
+
+        public void SetFullText(string text)
+        {
+            string newText = text;
+
+
+            Regex regex = new Regex(@"\{(.*?)\}");
+            MatchEvaluator matchEvaluator = new MatchEvaluator(match =>
+            {
+                string OldText = match.Groups[1].Value;
+                return ChangeReplaceableText(OldText); 
+            });
+
+            //Debug.Log(regex.ToString());
+
+            newText = regex.Replace(newText, matchEvaluator);
+
+            fullText = newText;
         }
 
         public void SetButtons(List<string> _texts, List<UnityAction> _unityActions, bool showTimer)
@@ -75,6 +121,29 @@ namespace MEET_AND_TALK
             }
 
             TimerSlider.gameObject.SetActive(showTimer);
+        }
+
+        string ChangeReplaceableText(string text)
+        {
+            GlobalValueManager manager = Resources.Load<GlobalValueManager>("GlobalValue");
+            manager.LoadFile();
+
+            string TextToReplace = "[Error Value]";
+            /* Global Value */
+            for (int i = 0; i < manager.IntValues.Count; i++) { if (text == manager.IntValues[i].ValueName) TextToReplace = manager.IntValues[i].Value.ToString(); } 
+            for (int i = 0; i < manager.FloatValues.Count; i++) { if (text == manager.FloatValues[i].ValueName) TextToReplace = manager.FloatValues[i].Value.ToString(); } 
+            for (int i = 0; i < manager.BoolValues.Count; i++) { if (text == manager.BoolValues[i].ValueName) TextToReplace = manager.BoolValues[i].Value.ToString(); } 
+            for (int i = 0; i < manager.StringValues.Count; i++) { if (text == manager.StringValues[i].ValueName) TextToReplace = manager.StringValues[i].Value; }
+
+            //
+            if(text.Contains(",")) 
+            {
+                string[] tmp = text.Split(',');
+                for (int i = 0; i < manager.IntValues.Count; i++) { if (tmp[0] == manager.IntValues[i].ValueName) TextToReplace = Mathf.Abs(manager.IntValues[i].Value - (int)System.Convert.ChangeType(tmp[1], typeof(int))).ToString(); }
+                for (int i = 0; i < manager.FloatValues.Count; i++) { if (tmp[0] == manager.FloatValues[i].ValueName) TextToReplace = Mathf.Abs(manager.FloatValues[i].Value - (int)System.Convert.ChangeType(tmp[1], typeof(int))).ToString(); }
+            }
+
+            return TextToReplace;
         }
 
     }

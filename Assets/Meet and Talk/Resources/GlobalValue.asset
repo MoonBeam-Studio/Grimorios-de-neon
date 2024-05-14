@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IntValues:
   - ValueName: DEMO_Level
-    Value: 20
+    Value: 1
     BaseValue: 1
   - ValueName: DEMO_GOLD
-    Value: 0
+    Value: 100
     BaseValue: 100
   FloatValues:
   - ValueName: Demo_PI
@@ -29,8 +29,8 @@ MonoBehaviour:
     BaseValue: 0
   StringValues:
   - ValueName: PlayerName
-    Value: New Character
-    BaseValue: New Character
+    Value: Milvio
+    BaseValue: Milvio
   intB: 1
   floatB: 1
   boolB: 1

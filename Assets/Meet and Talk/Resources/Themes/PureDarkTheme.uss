@@ -41,7 +41,7 @@ GridBackground {
      width: 100px;
      -unity-text-align: middle-center;
 }
-#localization_enum, #theme_enum, #save_btn, #load_btn{
+ #import_btn, #export_btn, #localization_enum, #theme_enum, #save_btn, #load_btn{
 	  cursor: link;
  }
  #version_text{

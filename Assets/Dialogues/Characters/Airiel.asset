@@ -17,4 +17,26 @@ MonoBehaviour:
     LanguageGenericType: Airiel
   - languageEnum: 1
     LanguageGenericType: Airiel
+  CustomizedName:
+    ValueName: PlayerName
+  UseGlobalValue: 0
   textColor: {r: 0.8616377, g: 0.43965825, b: 0.9811321, a: 1}
+  Avatars:
+  - type: 0
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}
+  - type: 1
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}
+  - type: 2
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}
+  - type: 3
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}
+  - type: 4
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}
+  - type: 5
+    LeftPosition: {fileID: 0}
+    RightPosition: {fileID: 0}

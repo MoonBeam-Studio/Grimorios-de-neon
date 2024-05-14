@@ -1,4 +1,4 @@
-#if UNITY_EDITOR
+﻿#if UNITY_EDITOR
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -6,6 +6,7 @@ using UnityEditor.UIElements;
 
 using UnityEditor;
 using UnityEditor.Callbacks;
+
 
 namespace MEET_AND_TALK
 {
@@ -54,7 +55,7 @@ namespace MEET_AND_TALK
 
         private void OnEnable()
         {
-            AutoSave =  Resources.Load<MeetAndTalkSettings>("MeetAndTalkSettings").AutoSave;
+            AutoSave = Resources.Load<MeetAndTalkSettings>("MeetAndTalkSettings").AutoSave;
             ContructGraphView();
             GenerateToolbar();
             Load();
@@ -63,6 +64,7 @@ namespace MEET_AND_TALK
         {
             rootVisualElement.Remove(graphView);
         }
+
 
         private void ContructGraphView()
         {
@@ -159,10 +161,9 @@ namespace MEET_AND_TALK
                 string path = EditorUtility.OpenFilePanel("Import Dialogue Localization File", Application.dataPath, "tsv");
                 if (path.Length != 0)
                 {
-                    //currentDialogueContainer.ImportText(path, currentDialogueContainer);
+                    currentDialogueContainer.ImportText(path, currentDialogueContainer);
                 }
             };
-            importBtn.SetEnabled(false);
             toolbar.Add(importBtn);
 
             ToolbarButton exportBtn = new ToolbarButton()
@@ -178,10 +179,9 @@ namespace MEET_AND_TALK
                 string path = EditorUtility.SaveFilePanel("Export Dialogue Localization File", Application.dataPath, currentDialogueContainer.name, "tsv");
                 if (path.Length != 0)
                 {
-                    //currentDialogueContainer.GenerateCSV(path, currentDialogueContainer);
+                    currentDialogueContainer.GenerateCSV(path, currentDialogueContainer);
                 }
             };
-            exportBtn.SetEnabled(false);
             toolbar.Add(exportBtn);
 
             rootVisualElement.Add(toolbar);
@@ -189,11 +189,12 @@ namespace MEET_AND_TALK
             Label version = new Label()
             {
                 name = "version_text",
-                text = "Meet and Talk - Free Version"
+                text = "Meet and Talk - 1.5.0a"
             };
             version.pickingMode = PickingMode.Ignore;
-            rootVisualElement.Add(version);
+            //rootVisualElement.Add(version);
         }
+
         private void OnGUI()
         {
             if (AutoSave && EditorApplication.timeSinceStartup - lastUpdateTime >= Resources.Load<MeetAndTalkSettings>("MeetAndTalkSettings").AutoSaveInterval && !Application.isPlaying)
@@ -261,7 +262,7 @@ namespace MEET_AND_TALK
         }
         private void Language(LocalizationEnum _language, ToolbarMenu _toolbarMenu)
         {
-            toolbarMenu.text = _language.ToString() + "";
+            toolbarMenu.text =  _language.ToString() + "";
             languageEnum = _language;
             graphView.LanguageReload();
         }
@@ -275,6 +276,8 @@ namespace MEET_AND_TALK
 
             graphView.UpdateTheme(_theme.ToString());
         }
+
+
     }
 #endif
 }
