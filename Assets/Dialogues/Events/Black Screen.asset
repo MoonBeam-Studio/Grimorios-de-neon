@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Black Screen
   m_EditorClassIdentifier: 
   ChangeStep: 1
-  IsOpaque: 1
+  IsOpaque: 0

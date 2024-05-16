@@ -63,6 +63,11 @@ namespace StarterAssets
         {
 			EventManager.Instance.GlichEvent();
         }
+
+		private void OnInteract()
+		{
+			EventManager.Instance.InteractEvent();
+		}
 #endif
 
 

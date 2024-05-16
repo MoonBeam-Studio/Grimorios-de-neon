@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class DE_BlackScreen : DialogueEventSO
 {
     [SerializeField] int ChangeStep;
-    [SerializeField] bool IsOpaque = true;
+    [SerializeField] bool IsOpaque;
     private GameObject _blackScreenGameObject;
     private Animator _blackScreenAnimator;
     private GameObject Global;
@@ -22,6 +22,7 @@ public class DE_BlackScreen : DialogueEventSO
         GlobalVariables globalVariables = Global.GetComponent<GlobalVariables>();
         GameObject _blackScreenGameObject = globalVariables.BlackScreen;
         _blackScreenAnimator = _blackScreenGameObject.GetComponent<Animator>();
+        IsOpaque = _blackScreenGameObject.activeSelf;
 
         if (IsOpaque)
         {

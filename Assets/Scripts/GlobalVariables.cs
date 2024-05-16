@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    public GameObject AirielHUB, BlackScreen, Player;
+    public GameObject AirielHUB, BlackScreen, Player, TextHUB, PortalOniric;
     public float MoveSpeed, SprintSpeed, RotationSpeed;
 }

@@ -13,6 +13,54 @@ MonoBehaviour:
   m_Name: 000001-AirielFirstMeet
   m_EditorClassIdentifier: 
   NodeLinkDatas:
+  - BaseNodeGuid: f2c74cfe-fe13-4246-bb54-25bdd8d0bc98
+    TargetNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
+  - BaseNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
+    TargetNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
+  - BaseNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
+    TargetNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+  - BaseNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
+    TargetNodeGuid: 091fdfd2-204b-4f33-a1a3-79f80e402c9f
+  - BaseNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+    TargetNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
+  - BaseNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
+    TargetNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
+  - BaseNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
+    TargetNodeGuid: 4b2876c7-5007-470e-87ce-345df3c22621
+  - BaseNodeGuid: 4b2876c7-5007-470e-87ce-345df3c22621
+    TargetNodeGuid: b8fc51d3-006b-44c4-ab37-99e42d1f5c5b
+  - BaseNodeGuid: b8fc51d3-006b-44c4-ab37-99e42d1f5c5b
+    TargetNodeGuid: 948088d9-68b5-4d02-9286-1503a8db2146
+  - BaseNodeGuid: 948088d9-68b5-4d02-9286-1503a8db2146
+    TargetNodeGuid: 35f71131-d36c-476b-8367-28d726893a37
+  - BaseNodeGuid: 35f71131-d36c-476b-8367-28d726893a37
+    TargetNodeGuid: 62af0807-f117-4d4f-a369-746376ab4d3d
+  - BaseNodeGuid: 62af0807-f117-4d4f-a369-746376ab4d3d
+    TargetNodeGuid: 8553c19b-4dbc-46ff-95a2-938ee2231497
+  - BaseNodeGuid: e7748d56-30ea-4a8b-a50f-1edb87f0c165
+    TargetNodeGuid: c04614a4-7250-48c6-8e57-fa2395692ad1
+  - BaseNodeGuid: 8553c19b-4dbc-46ff-95a2-938ee2231497
+    TargetNodeGuid: e7748d56-30ea-4a8b-a50f-1edb87f0c165
+  - BaseNodeGuid: c04614a4-7250-48c6-8e57-fa2395692ad1
+    TargetNodeGuid: 281c7ddf-2a7c-43e2-84ad-88ae88469ab3
+  - BaseNodeGuid: 281c7ddf-2a7c-43e2-84ad-88ae88469ab3
+    TargetNodeGuid: 6de253fa-0c03-4556-b0b9-0a99809ea8e9
+  - BaseNodeGuid: 6de253fa-0c03-4556-b0b9-0a99809ea8e9
+    TargetNodeGuid: c4906d0c-bf72-4030-902c-e7f7610db824
+  - BaseNodeGuid: c4906d0c-bf72-4030-902c-e7f7610db824
+    TargetNodeGuid: d2faf078-8b1c-4d44-b582-556b9a55b068
+  - BaseNodeGuid: d2faf078-8b1c-4d44-b582-556b9a55b068
+    TargetNodeGuid: a2d33a23-f348-494b-ac23-878e80010151
+  - BaseNodeGuid: 5f70d7e5-d1b9-4b2f-964f-6a83dc344273
+    TargetNodeGuid: bf536aeb-ad93-467d-a803-933bc886f23c
+  - BaseNodeGuid: a2d33a23-f348-494b-ac23-878e80010151
+    TargetNodeGuid: 5f70d7e5-d1b9-4b2f-964f-6a83dc344273
+  - BaseNodeGuid: bf536aeb-ad93-467d-a803-933bc886f23c
+    TargetNodeGuid: 5db83362-c54c-4695-b492-5d9b6d2b2c6d
+  - BaseNodeGuid: 5db83362-c54c-4695-b492-5d9b6d2b2c6d
+    TargetNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
+  - BaseNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
+    TargetNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
   - BaseNodeGuid: 773e1e59-c53b-45dd-b876-9f91dcb437aa
     TargetNodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
   - BaseNodeGuid: 2cd398f1-b198-465c-9edb-152f18d7ef23
@@ -21,10 +69,10 @@ MonoBehaviour:
     TargetNodeGuid: 42033bbf-df17-41cc-82e3-30d59378c3fd
   - BaseNodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
     TargetNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
-  - BaseNodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
-    TargetNodeGuid: 2f7befbd-6667-4b13-a071-874dd9673d77
   - BaseNodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
     TargetNodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
+  - BaseNodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
+    TargetNodeGuid: 2f7befbd-6667-4b13-a071-874dd9673d77
   - BaseNodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
     TargetNodeGuid: 73f0b8cc-5a4b-422d-a089-04186491ecd1
   - BaseNodeGuid: 73f0b8cc-5a4b-422d-a089-04186491ecd1
@@ -37,26 +85,20 @@ MonoBehaviour:
     TargetNodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
   - BaseNodeGuid: 5a9432c3-48a9-4d46-9a65-33ab2ed6bffa
     TargetNodeGuid: 1283378a-c567-4224-a0b1-7b1b0c17d521
-  - BaseNodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
-    TargetNodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
-  - BaseNodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
-    TargetNodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
-  - BaseNodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
-    TargetNodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
-  - BaseNodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
-    TargetNodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
-  - BaseNodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
-    TargetNodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
-  - BaseNodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
-    TargetNodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
-  - BaseNodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
-    TargetNodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
-  - BaseNodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
-    TargetNodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
-  - BaseNodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
-    TargetNodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
   - BaseNodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
     TargetNodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
+  - BaseNodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
+    TargetNodeGuid: e15b3723-9a7d-4104-9636-b449d0697507
+  - BaseNodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
+    TargetNodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
+  - BaseNodeGuid: 60bbfd33-ea8a-4fbb-b964-5829f70230cf
+    TargetNodeGuid: 554ef597-ca7a-4e10-bac6-4e1a7faa52be
+  - BaseNodeGuid: bccada0a-98b1-4629-8e05-f4e90e39a41d
+    TargetNodeGuid: 60bbfd33-ea8a-4fbb-b964-5829f70230cf
+  - BaseNodeGuid: e15b3723-9a7d-4104-9636-b449d0697507
+    TargetNodeGuid: bccada0a-98b1-4629-8e05-f4e90e39a41d
+  - BaseNodeGuid: 554ef597-ca7a-4e10-bac6-4e1a7faa52be
+    TargetNodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 377c9685-7508-40e1-a934-11041c6f90b0
@@ -94,7 +136,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 4
   - NodeGuid: 42033bbf-df17-41cc-82e3-30d59378c3fd
-    Position: {x: 669, y: -76}
+    Position: {x: 328, y: -73}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -111,7 +153,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 4
   - NodeGuid: 6f3d7d8b-c90c-43ec-9888-ce0a2b56161c
-    Position: {x: 949, y: -82}
+    Position: {x: 576, y: -71}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -126,9 +168,9 @@ MonoBehaviour:
       LanguageGenericType: Que...
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 4
+    Duration: 2
   - NodeGuid: 1283378a-c567-4224-a0b1-7b1b0c17d521
-    Position: {x: 1479, y: -80}
+    Position: {x: -529, y: 280}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -145,7 +187,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 4
   - NodeGuid: 5a9432c3-48a9-4d46-9a65-33ab2ed6bffa
-    Position: {x: 1207, y: -81}
+    Position: {x: -801, y: 279}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -162,7 +204,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 2
   - NodeGuid: b263c0ae-c1f6-4382-841d-86fc2c272324
-    Position: {x: 1981, y: -80}
+    Position: {x: -27, y: 280}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -174,12 +216,12 @@ MonoBehaviour:
     AvatarType: 0
     TextType:
     - languageEnum: 0
-      LanguageGenericType: ???:No me recuerdas?
+      LanguageGenericType: '???: No me recuerdas?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 3
   - NodeGuid: 722f3764-f0fa-44a6-93a7-5c6321af8752
-    Position: {x: 2222, y: -87}
+    Position: {x: 214, y: 273}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -196,127 +238,8 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 4
-  - NodeGuid: bf92fd2b-1d99-4fd1-b8ac-76ccfb0a0871
-    Position: {x: 2461, y: -88}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 0}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: Soy <size=120%><color=#DC70FA>Airiel</color></size>.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 4
-  - NodeGuid: df0d52ab-6659-4636-aef7-ac2f3a442731
-    Position: {x: 2731, y: -89}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Soy una Inteligencia Artificial implantada en tu cerebro.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 4
-  - NodeGuid: 2f833d45-efe0-4b99-bca0-63bcabb55e6a
-    Position: {x: 2966, y: -88}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Se que ahora no me recuerdas
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 2
-  - NodeGuid: 00dce45f-06fe-43b2-97e7-e4b47367a17d
-    Position: {x: 3197, y: -86}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 0}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: y que todo debe estar muy confuso para ti.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 4
-  - NodeGuid: 765bbdc7-bc94-4335-98b0-3a6870267fa4
-    Position: {x: 3439, y: -85}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Pero debes regresar
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 2
-  - NodeGuid: 18ed1ed0-c256-42e0-8895-2a2d9853832e
-    Position: {x: 3661, y: -75}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 0}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: la ciudad te necesita
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 4
-  - NodeGuid: 74d975ea-452e-4fae-8dba-12e91ea406e4
-    Position: {x: 3918, y: -79}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Sube las escaleras y vuelve al mundo real
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 4
   - NodeGuid: 89b5dfcc-6b89-498b-9a0c-e147fba780fb
-    Position: {x: 1734, y: -80}
+    Position: {x: -274, y: 280}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -332,10 +255,78 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 2
+  - NodeGuid: bccada0a-98b1-4629-8e05-f4e90e39a41d
+    Position: {x: 683, y: 277}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Que proceso?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: e15b3723-9a7d-4104-9636-b449d0697507
+    Position: {x: 460, y: 280}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Proceso?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 60bbfd33-ea8a-4fbb-b964-5829f70230cf
+    Position: {x: -797, y: 615}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Donde estamos?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 554ef597-ca7a-4e10-bac6-4e1a7faa52be
+    Position: {x: -550, y: 608}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Sube las escaleras y te lo contare todo'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 2f7befbd-6667-4b13-a071-874dd9673d77
-    Position: {x: 5077, y: -83}
+    Position: {x: 70, y: 667}
     EndNodeType: 0
   EventNodeDatas:
   - NodeGuid: 2cd398f1-b198-465c-9edb-152f18d7ef23
@@ -344,30 +335,30 @@ MonoBehaviour:
     - DialogueEventSO: {fileID: 11400000, guid: 3c6f8975bbe9b864db813dd2a3008180,
         type: 2}
   - NodeGuid: 50a7062e-6feb-4dd4-b22a-ad2b06908246
-    Position: {x: 318, y: -76}
+    Position: {x: -9, y: 48}
     EventScriptableObjects:
     - DialogueEventSO: {fileID: 0}
     - DialogueEventSO: {fileID: 0}
     - DialogueEventSO: {fileID: 11400000, guid: 3ad4d4b9bd662204fb547363b60be99d,
         type: 2}
-  - NodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
-    Position: {x: -809, y: -75}
-    EventScriptableObjects:
-    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
-        type: 2}
   - NodeGuid: 76c9e6f7-32a5-4648-8076-72f364bcbf5f
-    Position: {x: 4141, y: -67}
+    Position: {x: -289, y: 597}
     EventScriptableObjects:
     - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
         type: 2}
   - NodeGuid: 8534521f-585f-466c-83d0-78833ccf635e
-    Position: {x: 4456, y: -83}
+    Position: {x: -286, y: 729}
     EventScriptableObjects:
     - DialogueEventSO: {fileID: 11400000, guid: 3ad4d4b9bd662204fb547363b60be99d,
         type: 2}
+  - NodeGuid: a71da285-9ff7-43ac-9e93-1c4cd9e76668
+    Position: {x: -780, y: 76}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
+        type: 2}
   StartNodeDatas:
   - NodeGuid: 773e1e59-c53b-45dd-b876-9f91dcb437aa
-    Position: {x: -934, y: -102}
+    Position: {x: -792, y: -52}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

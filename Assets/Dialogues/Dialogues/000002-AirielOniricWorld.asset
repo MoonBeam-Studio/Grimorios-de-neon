@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: 000002-AirielOniricWorld
+  m_EditorClassIdentifier: 
+  NodeLinkDatas:
+  - BaseNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
+    TargetNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
+  - BaseNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
+    TargetNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+  - BaseNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
+    TargetNodeGuid: 091fdfd2-204b-4f33-a1a3-79f80e402c9f
+  - BaseNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
+    TargetNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
+  - BaseNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
+    TargetNodeGuid: 4b2876c7-5007-470e-87ce-345df3c22621
+  - BaseNodeGuid: 4b2876c7-5007-470e-87ce-345df3c22621
+    TargetNodeGuid: b8fc51d3-006b-44c4-ab37-99e42d1f5c5b
+  - BaseNodeGuid: b8fc51d3-006b-44c4-ab37-99e42d1f5c5b
+    TargetNodeGuid: 948088d9-68b5-4d02-9286-1503a8db2146
+  - BaseNodeGuid: 948088d9-68b5-4d02-9286-1503a8db2146
+    TargetNodeGuid: 35f71131-d36c-476b-8367-28d726893a37
+  - BaseNodeGuid: 35f71131-d36c-476b-8367-28d726893a37
+    TargetNodeGuid: 62af0807-f117-4d4f-a369-746376ab4d3d
+  - BaseNodeGuid: 62af0807-f117-4d4f-a369-746376ab4d3d
+    TargetNodeGuid: 8553c19b-4dbc-46ff-95a2-938ee2231497
+  - BaseNodeGuid: e7748d56-30ea-4a8b-a50f-1edb87f0c165
+    TargetNodeGuid: c04614a4-7250-48c6-8e57-fa2395692ad1
+  - BaseNodeGuid: 8553c19b-4dbc-46ff-95a2-938ee2231497
+    TargetNodeGuid: e7748d56-30ea-4a8b-a50f-1edb87f0c165
+  - BaseNodeGuid: c04614a4-7250-48c6-8e57-fa2395692ad1
+    TargetNodeGuid: 281c7ddf-2a7c-43e2-84ad-88ae88469ab3
+  - BaseNodeGuid: 281c7ddf-2a7c-43e2-84ad-88ae88469ab3
+    TargetNodeGuid: 6de253fa-0c03-4556-b0b9-0a99809ea8e9
+  - BaseNodeGuid: 6de253fa-0c03-4556-b0b9-0a99809ea8e9
+    TargetNodeGuid: c4906d0c-bf72-4030-902c-e7f7610db824
+  - BaseNodeGuid: c4906d0c-bf72-4030-902c-e7f7610db824
+    TargetNodeGuid: d2faf078-8b1c-4d44-b582-556b9a55b068
+  - BaseNodeGuid: d2faf078-8b1c-4d44-b582-556b9a55b068
+    TargetNodeGuid: a2d33a23-f348-494b-ac23-878e80010151
+  - BaseNodeGuid: 5f70d7e5-d1b9-4b2f-964f-6a83dc344273
+    TargetNodeGuid: bf536aeb-ad93-467d-a803-933bc886f23c
+  - BaseNodeGuid: a2d33a23-f348-494b-ac23-878e80010151
+    TargetNodeGuid: 5f70d7e5-d1b9-4b2f-964f-6a83dc344273
+  - BaseNodeGuid: bf536aeb-ad93-467d-a803-933bc886f23c
+    TargetNodeGuid: 5db83362-c54c-4695-b492-5d9b6d2b2c6d
+  - BaseNodeGuid: 5db83362-c54c-4695-b492-5d9b6d2b2c6d
+    TargetNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
+  - BaseNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
+    TargetNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
+  - BaseNodeGuid: f2c74cfe-fe13-4246-bb54-25bdd8d0bc98
+    TargetNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
+  - BaseNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+    TargetNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
+    Position: {x: -442, y: 87}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Que eres . . .
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
+    Position: {x: -180, y: 78}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Soy <size=110%><color=#DC70FA> Airiel'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 4b2876c7-5007-470e-87ce-345df3c22621
+    Position: {x: 50, y: 72}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Soy una inteligencia artifial implantada en ti
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: b8fc51d3-006b-44c4-ab37-99e42d1f5c5b
+    Position: {x: 274, y: 49}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: mi funcion es servir como tu asistente
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 948088d9-68b5-4d02-9286-1503a8db2146
+    Position: {x: 502, y: 49}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Hace una semana . . . '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: 35f71131-d36c-476b-8367-28d726893a37
+    Position: {x: -919, y: 371}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: <size=110%><b>Moriste
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 62af0807-f117-4d4f-a369-746376ab4d3d
+    Position: {x: -696, y: 369}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Como que mori
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: e7748d56-30ea-4a8b-a50f-1edb87f0c165
+    Position: {x: -241, y: 370}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Si, pude reconstruir las partes da\xF1adas de tu cuerpo"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 8553c19b-4dbc-46ff-95a2-938ee2231497
+    Position: {x: -472, y: 371}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Si estoy vivo ahora mismo
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 2
+  - NodeGuid: c04614a4-7250-48c6-8e57-fa2395692ad1
+    Position: {x: -18, y: 374}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Pero parece que parte de tu modulo de memoria esta da\xF1ado"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 281c7ddf-2a7c-43e2-84ad-88ae88469ab3
+    Position: {x: 203, y: 379}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Estamos en tu <size=110%><i><b> Mundo On\xEDrico</b></i></size>"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 6de253fa-0c03-4556-b0b9-0a99809ea8e9
+    Position: {x: 420, y: 379}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 9348e17515b17824795d3dd3cf47ed97, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Mi que
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: c4906d0c-bf72-4030-902c-e7f7610db824
+    Position: {x: 651, y: 374}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 484a76b2a4f67f642a1dae98bed6371f, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Tu <i>Mundo Onirico</i>
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: d2faf078-8b1c-4d44-b582-556b9a55b068
+    Position: {x: -921, y: 654}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Es un mundo creado en tu cabeza por tu conexion con la
+        magia
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 5f70d7e5-d1b9-4b2f-964f-6a83dc344273
+    Position: {x: -469, y: 664}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: No se como estan las cosas fuera
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: a2d33a23-f348-494b-ac23-878e80010151
+    Position: {x: -708, y: 658}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Tienes que salir de aqui y volver al mundo real
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: bf536aeb-ad93-467d-a803-933bc886f23c
+    Position: {x: -257, y: 665}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Siempre que vienes aqui dejo de ver el exterior
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 4
+  - NodeGuid: 5db83362-c54c-4695-b492-5d9b6d2b2c6d
+    Position: {x: -35, y: 667}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Por lo tanto no se donde nos ubicamos realmente
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
+    Position: {x: 187, y: 670}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 0}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Fuera no me veras, pero me podre comunicar contigo
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 091fdfd2-204b-4f33-a1a3-79f80e402c9f
+    Position: {x: 792, y: 794}
+    EndNodeType: 0
+  EventNodeDatas:
+  - NodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
+    Position: {x: -773, y: 190}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
+        type: 2}
+  - NodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
+    Position: {x: 423, y: 645}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: ced2583a02cda3e4f8f2cb0f2d478443,
+        type: 2}
+  - NodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
+    Position: {x: 430, y: 878}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: f4165ed98e1f8ce4b8d38692e149fd9b,
+        type: 2}
+  - NodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+    Position: {x: 426, y: 754}
+    EventScriptableObjects:
+    - DialogueEventSO: {fileID: 11400000, guid: 9f22daf51cfafa44482d9e370b2f28b9,
+        type: 2}
+  StartNodeDatas:
+  - NodeGuid: f2c74cfe-fe13-4246-bb54-25bdd8d0bc98
+    Position: {x: -873, y: 100}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []

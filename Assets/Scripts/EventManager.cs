@@ -19,6 +19,9 @@ public class EventManager : MonoBehaviour
     public delegate void ShowAim();
     public event ShowAim OnShowAim;
 
+    public delegate void Interact();
+    public event Interact OnInteract;
+
     //--| Attack
     //---| Spells
     public delegate void SpellCast();
@@ -36,6 +39,7 @@ public class EventManager : MonoBehaviour
 
     //--| Misc
     public void ShowAimEvent() => OnShowAim?.Invoke();
+    public void InteractEvent() => OnInteract?.Invoke();
 
     //--| Attack
     //---| Spells
