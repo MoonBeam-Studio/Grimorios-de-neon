@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestingGrounds.unity
     guid: 9a8337826377e0040aaca310e0551cdb
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Peta.unity
-    guid: 9aa93174c01580a4284f9b1aa59909b9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c2e36afc6bb58934e8f7fb92e7eb4fc3,
       type: 2}
