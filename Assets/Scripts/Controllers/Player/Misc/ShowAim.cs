@@ -46,7 +46,7 @@ public class ShowAim : MonoBehaviour
 
     private void ShowAimGameObject()
     {
-        if (AimGameObject.active == true)
+        if (AimGameObject.activeSelf)
         {
             AimGameObject.SetActive(false);
             IsShowingAim = false;

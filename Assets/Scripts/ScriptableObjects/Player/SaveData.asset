@@ -17,8 +17,9 @@ MonoBehaviour:
   MaxEnergy: 10
   MaxUpgradeSlots: 0
   MaxHealingCharges: 0
-  LastSavePointID: 0000
+  LastSavePointID: 0100
   UnlockedArchivementsIDs: []
   EquippedUpgradesIDs: []
   BossesDeffeatedID: []
-  QuestID: 
+  QuestID: []
+  IsNewGame: 0

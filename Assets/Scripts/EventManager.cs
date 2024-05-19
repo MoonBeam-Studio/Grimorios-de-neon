@@ -6,7 +6,7 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public static EventManager Instance { get; private set; }
-    private void Awake() {Instance = this;}
+    private void Awake() => Instance = this;
 
     // Delegates and Events \\
 
@@ -21,6 +21,9 @@ public class EventManager : MonoBehaviour
 
     public delegate void Interact();
     public event Interact OnInteract;
+
+    public delegate void OpenMenu();
+    public event OpenMenu OnOpenMenu;
 
     //--| Attack
     //---| Spells
@@ -40,6 +43,7 @@ public class EventManager : MonoBehaviour
     //--| Misc
     public void ShowAimEvent() => OnShowAim?.Invoke();
     public void InteractEvent() => OnInteract?.Invoke();
+    public void OpenMenuEvent() => OnOpenMenu?.Invoke();
 
     //--| Attack
     //---| Spells

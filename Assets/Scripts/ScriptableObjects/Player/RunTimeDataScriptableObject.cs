@@ -25,7 +25,7 @@ public class RunTimeDataScriptableObject : ScriptableObject
 
     [Header("IDs of Progression")]
     [Tooltip("[AA] Boss ID")] public string[] BossesDeffeatedID;
-    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public string QuestID;
+    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public string[] QuestID;
 
     [Space(10), Header("Run Time Data"),Space(5)]
 

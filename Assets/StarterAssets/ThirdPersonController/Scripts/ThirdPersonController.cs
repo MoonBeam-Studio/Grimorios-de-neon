@@ -1,6 +1,8 @@
-﻿ using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using VSCodeEditor;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -14,6 +16,7 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        [SerializeField] GameObject Menu, MenuCanvas;
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -134,6 +137,7 @@ namespace StarterAssets
 
         private void Start()
         {
+
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -388,6 +392,26 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
+        }
+
+        private void OnEnable()
+        {
+            EventManager.Instance.OnOpenMenu += OpenMenu;
+        }
+
+        private void OnDisable()
+        {
+            EventManager.Instance.OnOpenMenu -= OpenMenu;            
+        }
+
+        private void OpenMenu()
+        {
+            
+            PauseMenuController pauseMenuController = Menu.GetComponent<PauseMenuController>();
+
+            if (MenuCanvas.activeSelf) pauseMenuController.CloseMenu();
+            else pauseMenuController.OpenMenu();
+            
         }
     }
 }

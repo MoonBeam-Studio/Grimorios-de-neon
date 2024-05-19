@@ -68,6 +68,11 @@ namespace StarterAssets
 		{
 			EventManager.Instance.InteractEvent();
 		}
+
+		private void OnOpenMenu()
+		{
+			EventManager.Instance.OpenMenuEvent();
+		}
 #endif
 
 

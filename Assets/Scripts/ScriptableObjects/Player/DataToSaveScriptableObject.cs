@@ -21,5 +21,8 @@ public class DataToSaveScriptableObject : ScriptableObject
 
     [Header("IDs of Progression")]
     [Tooltip("[AA] Boss ID")]public string[] BossesDeffeatedID;
-    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public string QuestID;
+    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public string[] QuestID;
+
+    [Space]
+    public bool IsNewGame;
 }
