@@ -379,30 +379,8 @@
         {
             "name": "MenuNavigation",
             "id": "0b99db0b-2a44-4019-a4a4-37ddf125be75",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "51ca9dc3-1b6d-4817-b950-9881942c1dc2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "ccd8be2d-76a7-4c65-8a1d-f2b7449f1083",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
+            "actions": [],
+            "bindings": []
         }
     ],
     "controlSchemes": [
