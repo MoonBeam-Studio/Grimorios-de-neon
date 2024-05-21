@@ -375,12 +375,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "MenuNavigation",
-            "id": "0b99db0b-2a44-4019-a4a4-37ddf125be75",
-            "actions": [],
-            "bindings": []
         }
     ],
     "controlSchemes": [

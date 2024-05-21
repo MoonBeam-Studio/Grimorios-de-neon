@@ -58,7 +58,7 @@ public class RipAndTear : MonoBehaviour
                 y: 0,
                 z: 0
                 );
-            Vector3 SpearSpawnScale = new Vector3(0.05f, .5f, 0.05f);
+            Vector3 SpearSpawnScale = new Vector3(0.01f, .1f, 0.01f);
             Vector3 SpearSpawnPosition = SpawnParent.transform.position;
 
             GameObject SpawnedSpear = Instantiate(SpearPrefab, SpawnParent.transform);
@@ -71,6 +71,8 @@ public class RipAndTear : MonoBehaviour
 
             SpearController = SpawnedSpear.GetComponent<Spear>();
             SpearController.SpearDestination = SpearSpawnPosition;
+
+            SpawnParent.GetComponentInParent<IEnemy>().TakeDamage(Damage * MinDamagePercentage);
         }
     }
 
@@ -84,6 +86,7 @@ public class RipAndTear : MonoBehaviour
             {
                 foreach (Transform Spear in GameObject.Find($"/{EnemyInArea.gameObject.name}/Center").transform)
                 {
+                    EnemyInArea.GetComponent<IEnemy>().TakeDamage(Damage);
                     Destroy(Spear.gameObject);
                     SpearNumber = 0;
                 }
