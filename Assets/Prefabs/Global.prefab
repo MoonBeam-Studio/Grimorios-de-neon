@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 7897474633611397390}
   - component: {fileID: 9134786114486904402}
   - component: {fileID: 805114529575708596}
+  - component: {fileID: 3265396203893150062}
   m_Layer: 0
   m_Name: Global
   m_TagString: Untagged
@@ -185,7 +186,7 @@ MonoBehaviour:
   PortalOniric: {fileID: 0}
   MoveSpeed: 2
   SprintSpeed: 5.335
-  RotationSpeed: 0
+  RotationSpeed: 0.15
 --- !u!114 &805114529575708596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,10 +199,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce65f7d55a0ebc540aaca60bd5a77e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZoneID: 0000000001000000
+  ZoneID: 000000000100000002000000
   ZoneName:
   - MundoOnirico
+  - '##WIP##'
   - ZonaTesteo
+--- !u!114 &3265396203893150062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296502373269215689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1043ac6c0118344a8287c8e7f2f982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4534648089867654763
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,9 @@ public class EventManager : MonoBehaviour
     public delegate void OpenMenu();
     public event OpenMenu OnOpenMenu;
 
+    public delegate void SkipDialogue();
+    public event SkipDialogue OnSkipDialogue;
+
     //--| Attack
     //---| Spells
     public delegate void SpellCast();
@@ -44,6 +47,7 @@ public class EventManager : MonoBehaviour
     public void ShowAimEvent() => OnShowAim?.Invoke();
     public void InteractEvent() => OnInteract?.Invoke();
     public void OpenMenuEvent() => OnOpenMenu?.Invoke();
+    public void SkipDialogueEvent() => OnSkipDialogue?.Invoke();
 
     //--| Attack
     //---| Spells

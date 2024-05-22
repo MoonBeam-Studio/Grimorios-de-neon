@@ -33,6 +33,16 @@ namespace MEET_AND_TALK
             audioSource = GetComponent<AudioSource>();
         }
 
+        private void OnEnable()
+        {
+            EventManager.Instance.OnSkipDialogue += SkipDialogue;
+        }
+
+        private void OnDisable()
+        {
+            EventManager.Instance.OnSkipDialogue -= SkipDialogue;
+        }
+
         private void Update()
         {
             Timer -= Time.deltaTime;
@@ -346,7 +356,7 @@ namespace MEET_AND_TALK
         public void SkipDialogue()
         {
             StopAllCoroutines();
-
+            Debug.Log("Skip Dialogue");
             switch (currentDialogueNodeData)
             {
                 case DialogueNodeData nodeData:

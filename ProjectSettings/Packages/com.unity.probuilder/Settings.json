@@ -32,6 +32,11 @@
                 "value": "{\"m_Value\":\"Assets/ProBuilder Data/Default Color Palette.asset\"}"
             },
             {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "editor.materialPalettePath",
+                "value": "{\"m_Value\":\"Assets/ProBuilder Data/Default Material Palette.asset\"}"
+            },
+            {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "lightmapping.autoUnwrapLightmapUV",
                 "value": "{\"m_Value\":true}"
@@ -149,7 +154,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
-                "value": "{\"m_Value\":{\"x\":4.2891130447387699,\"y\":-0.12364020198583603,\"z\":-5.880947589874268}}"
+                "value": "{\"m_Value\":{\"x\":10.0,\"y\":0.10000000149011612,\"z\":10.0}}"
             },
             {
                 "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",

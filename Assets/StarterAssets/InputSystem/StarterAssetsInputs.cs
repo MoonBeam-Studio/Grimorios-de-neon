@@ -73,6 +73,11 @@ namespace StarterAssets
 		{
 			EventManager.Instance.OpenMenuEvent();
 		}
+
+		private void OnSkipDialogue()
+		{
+			EventManager.Instance.SkipDialogueEvent();
+		}
 #endif
 
 

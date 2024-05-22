@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,9 @@ public class PlayerResourceMangerScript : MonoBehaviour
 
     private void Update()
     {
+        Array.Sort(_runTimeData.UnlockedArchivementsIDs);
+        Array.Sort(_runTimeData.EquippedUpgradesIDs);
+
         Vida = _runTimeData.CurrentHealth;
         Mana = _runTimeData.CurrentMana;
         Energia = _runTimeData.CurrentEnergy;
@@ -120,5 +124,4 @@ public class PlayerResourceMangerScript : MonoBehaviour
         _runTimeData.CurrentHealingCharges = _runTimeData.MaxHealingCharges;
         _runTimeData.CurrentUpgradeSlots = _runTimeData.MaxUpgradeSlots;
     }
-
 }
