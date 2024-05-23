@@ -24,9 +24,6 @@ public class PlayerResourceMangerScript : MonoBehaviour
 
     private void Update()
     {
-        Array.Sort(_runTimeData.UnlockedArchivementsIDs);
-        Array.Sort(_runTimeData.EquippedUpgradesIDs);
-
         Vida = _runTimeData.CurrentHealth;
         Mana = _runTimeData.CurrentMana;
         Energia = _runTimeData.CurrentEnergy;

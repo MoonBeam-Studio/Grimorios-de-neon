@@ -72,7 +72,6 @@ public class ArchivementManager : MonoBehaviour
 
         if (int.TryParse(ArchivementID, out ID))
         {
-            Debug.Log(ID);
             return ID;
         }
         else return 0;

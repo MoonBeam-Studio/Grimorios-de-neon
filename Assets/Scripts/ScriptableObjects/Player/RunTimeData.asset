@@ -20,7 +20,6 @@ MonoBehaviour:
   LastSavePointID: 0000
   UnlockedArchivementsIDs:
   - 001
-  - 002
   EquippedUpgradesIDs: []
   BossesDeffeatedID: []
   QuestID: []

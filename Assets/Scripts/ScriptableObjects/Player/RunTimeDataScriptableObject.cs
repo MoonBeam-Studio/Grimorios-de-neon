@@ -20,12 +20,12 @@ public class RunTimeDataScriptableObject : ScriptableObject
     [Tooltip("[AA] SceneID [BB]Savepoint ID")] public string LastSavePointID = "0000";
 
     [Header("IDs of unlockeables")]
-    [Tooltip("[A] Category ID [BB]Unlockeable ID")] public string[] UnlockedArchivementsIDs;
-    [Tooltip("[A] Category ID [BB]Unlockeable ID")] public string[] EquippedUpgradesIDs;
+    [Tooltip("[A] Category ID [BB]Unlockeable ID")] public List<string> UnlockedArchivementsIDs;
+    [Tooltip("[A] Category ID [BB]Unlockeable ID")] public List<string> EquippedUpgradesIDs;
 
     [Header("IDs of Progression")]
-    [Tooltip("[AA] Boss ID")] public string[] BossesDeffeatedID;
-    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public string[] QuestID;
+    [Tooltip("[AA] Boss ID")] public List<string> BossesDeffeatedID;
+    [Tooltip("[AAA] NPC ID [BB]Quest ID [GG] Progress ID")] public List<string> QuestID;
 
     [Space(10), Header("Run Time Data"),Space(5)]
 
