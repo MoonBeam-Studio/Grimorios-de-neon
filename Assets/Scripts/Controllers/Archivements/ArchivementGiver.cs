@@ -9,6 +9,7 @@ public class ArchivementGiver : MonoBehaviour
     [SerializeField] int ArchivementID;
     [SerializeField] ArchivementCategory Category;
     [SerializeField] string Archivement;
+    [SerializeField] bool ActivateOnContact;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class ArchivementGiver : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!other.CompareTag("Player")) return;
+        if(!other.CompareTag("Player") || !ActivateOnContact) return;
 
         GiveArchivement();
     }

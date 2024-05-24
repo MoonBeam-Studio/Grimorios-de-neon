@@ -25,6 +25,6 @@ MonoBehaviour:
   QuestID: []
   CurrentHealth: 100
   CurrentMana: 20
-  CurrentEnergy: 10
+  CurrentEnergy: 8
   CurrentUpgradeSlots: 0
   CurrentHealingCharges: 0
