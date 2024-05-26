@@ -18,7 +18,7 @@ public class DE_ActivateDeactivateReturningPortal : DialogueEventSO
         TeleportToRealWorld teleportToRealWorld = ReturningPortal.GetComponent<TeleportToRealWorld>();
         SphereCollider collider = ReturningPortal.GetComponent<SphereCollider>();
 
-        teleportToRealWorld.enabled = !teleportToRealWorld.enabled;
+        teleportToRealWorld.enabled = true;
         collider.enabled = !collider.enabled;
     }
 }

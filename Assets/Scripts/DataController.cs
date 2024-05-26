@@ -13,7 +13,18 @@ public class DataController : MonoBehaviour
 
     public void ResetData()
     {
-        CurrentData = BaseData;
+        CurrentData.MaxHealth = BaseData.MaxHealth;
+        CurrentData.MaxMana = BaseData.MaxMana;
+        CurrentData.MaxEnergy = BaseData.MaxEnergy;
+        CurrentData.MaxUpgradeSlots = BaseData.MaxUpgradeSlots;
+        CurrentData.MaxHealingCharges = BaseData.MaxHealingCharges;
+        CurrentData.LastSavePointID = BaseData.LastSavePointID;
+        CurrentData.UnlockedArchivementsIDs = null;
+        CurrentData.EquippedUpgradesIDs = null;
+        CurrentData.BossesDeffeatedID = null;
+        CurrentData.QuestID = null;
+        CurrentData.IsNewGame = true;
+        SavedToRunTime();
     }
 
     public void SavedToRunTime()

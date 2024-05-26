@@ -21,4 +21,5 @@ MonoBehaviour:
   UnlockedArchivementsIDs: []
   EquippedUpgradesIDs: []
   BossesDeffeatedID: []
-  QuestID: 
+  QuestID: []
+  IsNewGame: 0

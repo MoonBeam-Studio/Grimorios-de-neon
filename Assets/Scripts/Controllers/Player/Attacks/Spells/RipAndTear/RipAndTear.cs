@@ -72,7 +72,7 @@ public class RipAndTear : MonoBehaviour
             SpearController = SpawnedSpear.GetComponent<Spear>();
             SpearController.SpearDestination = SpearSpawnPosition;
 
-            SpawnParent.GetComponentInParent<IEnemy>().TakeDamage(Damage * MinDamagePercentage);
+            SpawnParent.GetComponentInParent<IEnemy>().TakeDamage(Damage * MinDamagePercentage, DamageType.RipAndTearCast);
         }
     }
 
@@ -86,7 +86,7 @@ public class RipAndTear : MonoBehaviour
             {
                 foreach (Transform Spear in GameObject.Find($"/{EnemyInArea.gameObject.name}/Center").transform)
                 {
-                    EnemyInArea.GetComponent<IEnemy>().TakeDamage(Damage);
+                    EnemyInArea.GetComponent<IEnemy>().TakeDamage(Damage, DamageType.RipAndTearRelease);
                     Destroy(Spear.gameObject);
                     SpearNumber = 0;
                 }

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IEnemy
 {
-    public void TakeDamage(float DamageValue);
+    public void TakeDamage(float DamageValue, DamageType damageType);
     public void Die();
 }

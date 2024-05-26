@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private Collider _collider;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private GameObject[] ToDisableOnDead;
-    // Start is called before the first frame update
+    [SerializeField] private RipAndTearShowcase _ripandtearshowcase;
+    
     void Start()
     {
         _collider = GetComponent<Collider>();
@@ -26,7 +27,7 @@ public class EnemyController : MonoBehaviour, IEnemy
         _agent.enabled = true;
         Debug.Log("Activated");
     }
-    public void TakeDamage(float Damage)
+    public void TakeDamage(float Damage, DamageType type)
     {
         CurrentHealth -= Damage;
 
@@ -39,6 +40,7 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public void Die()
     {
+        if (_ripandtearshowcase != null) _ripandtearshowcase.Count(gameObject);
         _collider.enabled = false;
         _agent.enabled = false;
         foreach (GameObject Disable in ToDisableOnDead)

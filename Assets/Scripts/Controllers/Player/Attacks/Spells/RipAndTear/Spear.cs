@@ -17,8 +17,8 @@ public class Spear : MonoBehaviour
     {
         lineRenderer = GetComponentInChildren<LineRenderer>();
         SpearBottom = GameObject.Find($"{gameObject.name}/SpearBottom").transform;
-        Hand = GameObject.Find("/Player/Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/SpellOutPosition").transform;
-        Head = GameObject.Find("/Player/Skeleton/Hips/Spine/Chest/UpperChest/Neck/Head").transform;
+        Hand = GameObject.Find("/Player/Skeleton/mixamorig1:Hips/mixamorig1:Spine/mixamorig1:Spine1/mixamorig1:Spine2/mixamorig1:RightShoulder/mixamorig1:RightArm/mixamorig1:RightForeArm/mixamorig1:RightHand/SpellOutPosition").transform;
+        Head = GameObject.Find("/Player/Skeleton/mixamorig1:Hips/mixamorig1:Spine/mixamorig1:Spine1/mixamorig1:Spine2/mixamorig1:Neck/mixamorig1:Head").transform;
         Player = GameObject.Find("/Player").transform;
 
 

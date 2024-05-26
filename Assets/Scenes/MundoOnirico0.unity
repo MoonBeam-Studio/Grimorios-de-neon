@@ -2048,7 +2048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1081376190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13526,6 +13526,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 507876013204582015, guid: 517d81d045223874fb52097d6b65e350,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428358615671047880, guid: 517d81d045223874fb52097d6b65e350,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6298156433091388813, guid: 517d81d045223874fb52097d6b65e350,
         type: 3}
       propertyPath: m_Name
@@ -18807,12 +18817,12 @@ PrefabInstance:
     - target: {fileID: 805114529575708596, guid: 39e88f745b3a0ac41b164ac953679f68,
         type: 3}
       propertyPath: ZoneID.Array.data[2]
-      value: 999
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 805114529575708596, guid: 39e88f745b3a0ac41b164ac953679f68,
         type: 3}
       propertyPath: ZoneName.Array.data[1]
-      value: 
+      value: DistritoShugass
       objectReference: {fileID: 0}
     - target: {fileID: 805114529575708596, guid: 39e88f745b3a0ac41b164ac953679f68,
         type: 3}
@@ -38673,7 +38683,7 @@ PrefabInstance:
     - target: {fileID: 1836566800166714112, guid: a7be821b865082042bd67b627e2c252e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2936521495086088667, guid: a7be821b865082042bd67b627e2c252e,
         type: 3}

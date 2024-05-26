@@ -18,13 +18,12 @@ MonoBehaviour:
   MaxUpgradeSlots: 0
   MaxHealingCharges: 0
   LastSavePointID: 0000
-  UnlockedArchivementsIDs:
-  - 001
+  UnlockedArchivementsIDs: []
   EquippedUpgradesIDs: []
   BossesDeffeatedID: []
   QuestID: []
   CurrentHealth: 100
   CurrentMana: 20
-  CurrentEnergy: 8
+  CurrentEnergy: 10
   CurrentUpgradeSlots: 0
   CurrentHealingCharges: 0

@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: 000002-AirielOniricWorld
   m_EditorClassIdentifier: 
   NodeLinkDatas:
+  - BaseNodeGuid: f2c74cfe-fe13-4246-bb54-25bdd8d0bc98
+    TargetNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
   - BaseNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
     TargetNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
   - BaseNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
     TargetNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
   - BaseNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
     TargetNodeGuid: 091fdfd2-204b-4f33-a1a3-79f80e402c9f
+  - BaseNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
+    TargetNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
   - BaseNodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b
     TargetNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
   - BaseNodeGuid: 611cf413-e574-4ce9-9d47-4ba911fe594a
@@ -57,10 +61,6 @@ MonoBehaviour:
     TargetNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
   - BaseNodeGuid: a244336a-c995-44bc-861f-0051ee7aeb0f
     TargetNodeGuid: d0bba29e-55d3-448a-91ba-f7c4132a44ac
-  - BaseNodeGuid: f2c74cfe-fe13-4246-bb54-25bdd8d0bc98
-    TargetNodeGuid: aaf87523-5ded-413c-bda5-6b7cfa360b3b
-  - BaseNodeGuid: ba5d351f-70f0-4748-bf20-3d43e1ce3a9f
-    TargetNodeGuid: 3146f4ab-aeb4-4de3-afb1-52c6c2167d8f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: fea47ce5-86d8-4be0-bbfe-662ac7ccf68b

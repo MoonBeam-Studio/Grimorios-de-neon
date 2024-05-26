@@ -29,8 +29,8 @@ MonoBehaviour:
     BaseValue: 0
   StringValues:
   - ValueName: PlayerName
-    Value: Milvio
-    BaseValue: Milvio
+    Value: Erik
+    BaseValue: Erik
   intB: 1
   floatB: 1
   boolB: 1

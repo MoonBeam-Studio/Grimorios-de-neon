@@ -7,7 +7,6 @@ using UnityEditor.UIElements;
 using UnityEditor;
 using UnityEditor.Callbacks;
 
-
 namespace MEET_AND_TALK
 {
     [ExecuteInEditMode]

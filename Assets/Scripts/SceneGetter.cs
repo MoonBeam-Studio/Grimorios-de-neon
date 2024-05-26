@@ -13,10 +13,11 @@ public class SceneGetter : MonoBehaviour
     public int[] ZoneID;
     public string[] ZoneName;
 
-    private void Start()
+    private void Update()
     {
         foreach (int ID in ZoneID)
         {
+            if (Zones.ContainsKey(ID)) break;
             Zones.Add(ID, ZoneName[ID]);
         }
     }
